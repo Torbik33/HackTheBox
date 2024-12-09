@@ -3,7 +3,7 @@
 ## General Commands
 | Command | Description |
 |---------|-------------|
-| curl -s https://crt.sh/\?q\=<target-domain>\&output\=json | jq . | Certificate transparency. |
+| `curl -s "https://crt.sh/?q=<target-domain>&output=json" \| jq '.'` | Certificate transparency. |
 | `for i in $(cat ip-addresses.txt);do shodan host $i;done` | Scan each IP address in a list using Shodan. |
 
 ---
